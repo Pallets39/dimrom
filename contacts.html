@@ -1,42 +1,54 @@
-<!-- contacts.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Контакты — Паллеты Калининград</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — ДИМРОМ</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>Контакты</h1>
+    <div class="top-bar">
+      📍 пос. Поддубное, ул. Лесная, 50  
+      📞 <a href="tel:+79622613435">+7 (962) 261-34-35</a>
+    </div>
+    <h1>ДИМРОМ</h1>
+    <p class="subtitle">Контакты</p>
     <nav>
-      <a href="index.html">Главная</a> |
-      <a href="pallets.html">Паллеты</a> |
-      <a href="equipment.html">Спецтехника</a> |
+      <a href="index.html">Главная</a>
+      <a href="pallets.html">Паллеты</a>
+      <a href="equipment.html">Спецтехника</a>
       <a href="contacts.html">Контакты</a>
     </nav>
   </header>
 
   <main>
-    <h2>Свяжитесь с нами</h2>
-    <p><strong>Адрес:</strong> г. Калининград, ул. Промышленная, д. 12 (склад)</p>
-    <p><strong>Телефон:</strong> +7 (911) XXX-XX-XX</p>
-    <p><strong>Email:</strong> info@pallets-kld.ru</p>
-    <p><strong>Режим работы:</strong> Пн–Пт: 8:00–18:00, Сб: 9:00–15:00</p>
+    <section>
+      <h2>Наш склад</h2>
+      <p><strong>Адрес:</strong> пос. Поддубное, ул. Лесная, д. 50 (Калининградская область)</p>
+      <p><strong>Телефон:</strong> <a href="tel:+79622613435">+7 (962) 261-34-35</a></p>
+      <p><strong>Email:</strong> <a href="mailto:palletskld@internet.ru">palletskld@internet.ru</a></p>
+      <p><strong>Режим работы:</strong> Пн–Пт: 8:00–18:00, Сб: 9:00–15:00, Вс: выходной</p>
 
-    <h3>Форма обратной связи</h3>
-    <form action="#" method="POST">
-      <label>Ваше имя: <input type="text" required></label><br><br>
-      <label>Телефон: <input type="tel" required></label><br><br>
-      <label>Email: <input type="email"></label><br><br>
-      <label>Сообщение:<br><textarea rows="4" required></textarea></label><br><br>
-      <button type="submit" class="btn">Отправить</button>
-    </form>
+      <div class="map-placeholder">
+        <p>📍 Карта будет добавлена позже.<br>Или пришлите координаты — встрою Яндекс.Карту за 2 минуты.</p>
+      </div>
 
-    
+      <h3>Форма обратной связи</h3>
+      <form action="https://formspree.io/f/moqkzqjn" method="POST">
+        <label>Ваше имя: <input type="text" name="name" required></label><br><br>
+        <label>Телефон: <input type="tel" name="phone" required></label><br><br>
+        <label>Сообщение:<br><textarea name="message" rows="4" required></textarea></label><br><br>
+        <button type="submit" class="btn primary">Отправить</button>
+      </form>
+
+      <p class="note">✅ После отправки вы получите подтверждение на email. Форма работает без программирования.</p>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Паллеты Калининград</p>
+    <p>© 2025 ДИМРОМ</p>
+    <p>📧 <a href="mailto:palletskld@internet.ru">palletskld@internet.ru</a></p>
   </footer>
 </body>
+</html>
