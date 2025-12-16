@@ -30,10 +30,34 @@
       <p><strong>Email:</strong> <a href="mailto:palletskld@internet.ru">palletskld@internet.ru</a></p>
       <p><strong>Режим работы:</strong> Пн–Пт: 8:00–18:00, Сб: 9:00–15:00, Вс: выходной</p>
 
-      <div class="map-placeholder">
-        <p>📍 Карта будет добавлена позже.<br>Или пришлите координаты — встрою Яндекс.Карту за 2 минуты.</p>
-      </div>
+      <div class="map-container">
+  <h3>Где нас найти</h3>
+  <div id="yandex-map" style="width: 100%; height: 300px; border-radius: 8px; margin-top: 15px;"></div>
+</div>
 
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script type="text/javascript">
+  ymaps.ready(init);
+  function init() {
+    var myMap = new ymaps.Map('yandex-map', {
+      center: [54.607952, 20.481951],
+      zoom: 15,
+      controls: ['zoomControl', 'fullscreenControl']
+    });
+
+    var myPlacemark = new ymaps.Placemark([54.607952, 20.481951], {
+      hintContent: 'Склад ДИМРОМ',
+      balloonContent: 'Деревянные паллеты и спецтехника<br>пос. Поддубное, ул. Лесная, 50'
+    }, {
+      iconLayout: 'default#image',
+      iconImageHref: 'https://cdn-icons-png.flaticon.com/512/1063/1063367.png',
+      iconImageSize: [40, 40],
+      iconImageOffset: [-20, -40]
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+  }
+</script>
       <h3>Форма обратной связи</h3>
       <form action="https://formspree.io/f/moqkzqjn" method="POST">
         <label>Ваше имя: <input type="text" name="name" required></label><br><br>
