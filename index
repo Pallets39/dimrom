@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Паллеты Калининград — деревянные паллеты и спецтехника</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Паллеты Калининград</h1>
+    <nav>
+      <a href="index.html">Главная</a> |
+      <a href="pallets.html">Паллеты</a> |
+      <a href="equipment.html">Спецтехника</a> |
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
 
+  <main>
+    <section>
+      <h2>Деревянные паллеты в Калининграде</h2>
+      <p>Продажа новых и б/у деревянных паллет (EUR, FIN, 1200×800, 1200×1000 мм). Возможна доставка по Калининградской области.</p>
+      <a href="pallets.html" class="btn">Подробнее о паллетах</a>
+    </section>
+
+    <section>
+      <h2>Спецтехника</h2>
+      <p>Погрузчики, штабелёры, роклы — в продаже и аренду. Техника после ТО, в отличном состоянии.</p>
+      <a href="equipment.html" class="btn">Спецтехника</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Паллеты Калининград. Все права защищены.</p>
+    <p>г. Калининград, тел: +7 (911) XXX-XX-XX</p>
+  </footer>
+</body>
+</html>
